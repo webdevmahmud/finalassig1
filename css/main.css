@@ -1,0 +1,1231 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
+/* ==========================================================================
+Typography
+========================================================================== */
+p {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279; }
+
+h1 {
+  font-size: 65px;
+  color: #2d3033; }
+
+h2 {
+  font-size: 40px;
+  color: #2d3033; }
+
+h3 {
+  font-size: 28px;
+  color: black;
+  font-weight: 300; 
+  text-align: center;
+}
+  
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400; }
+
+h5 {
+  font-size: 14px;
+  color: #2d3033;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.btn {
+  background-color: #e84545;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  text-transform: uppercase; }
+  .btn:hover, .btn:focus {
+    background-color: #e52e2e;
+    color: #fff; }
+  .btn-large {
+    padding: 15px 40px; }
+
+/* ==========================================================================
+	General Styles
+========================================================================== */
+a {
+  color: #e84545; }
+
+a:hover, a:focus {
+  text-decoration: none;
+  -moz-transition: background-color, color, 0.3s;
+  -o-transition: background-color, color, 0.3s;
+  -webkit-transition: background-color, color, 0.3s;
+  transition: background-color, color, 0.3s; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #6c7279; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+.section {
+  padding: 100px 0; }
+
+.no-padding {
+  padding: 0; }
+
+.no-gutter [class*=col-] {
+  padding-right: 0;
+  padding-left: 0; }
+
+
+	$Header
+:root{
+    --pink:#e84393;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+
+}
+
+.heading span{
+    color: var(--pink);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--pink);
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+}
+
+ header .logo{
+    font-size:3rem;
+    color: #333;
+    font-weight: bolder;
+ }
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+/* ==========================================================================
+	Header part start 
+========================================================================== */
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/Online-Flower-shop22-pdf.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color:#999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    pad: 2rem 0;
+    padding-bottom: 3rem;
+
+}
+
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    object-fit: cover;
+}
+
+
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+
+}
+
+
+
+
+/* ==========================================================================
+	Our Features part start 
+========================================================================== */
+
+.flower{
+
+    display: flex;
+  
+    gap: 50px;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+
+
+/* ==========================================================================
+	Our Features part close
+========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+	Icon and text  part start 
+========================================================================== */
+
+.icontext{
+  display: flex;
+  background-color: #f4f4f4;
+  gap: 50px;
+  box-sizing: border-box;
+  padding-top: 49px;
+  padding-bottom: 44px;
+  height: 238px;
+}
+
+
+/* ==========================================================================
+	Icon and text  part close
+========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+	Deivery part  start 
+========================================================================= */
+
+.delivery-container{
+  
+   display: flex;
+   gap: 1.7rem;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   margin-left:100px;
+    display: flex;
+    flex-wrap: nowrap;
+ 
+}
+
+
+/* ==========================================================================
+	Deivery part  close
+========================================================================= */
+.flex-container{
+ 
+  display: flex;
+  flex-direction: row;
+  
+ 
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
+  flex-wrap: nowrap;
+
+  
+}
+
+.Instra-container .info{
+  flex-direction: row;
+}
+
+
+
+
+/* ==========================================================================
+	hot Deal  part  start
+========================================================================= */
+
+.hoty{
+  background-color: #fceef1;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.imgpart img {
+  height: 250px;
+  margin-left: 40px;
+  width: 200px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+	Instragram  part  start 
+========================================================================= */
+
+
+
+/* ==========================================================================
+	Instragram  part  close
+========================================================================= */
+
+.icons-container{
+  display: flex;
+  padding: 20px 0px;
+  gap: 10px;
+   align-items: flex-start;
+}
+
+
+
+
+/* ==========================================================================
+	Subscribe  part  start 
+========================================================================= */
+
+
+
+.subscribe {
+  padding: 25vh 0;
+  background: url(https://i.ibb.co/r4xf3sK/newslater.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.subscribe:before {
+content: "";
+background: rgba(6, 12, 34, 0.6);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+
+.heading{
+
+  text-align: center;
+  font-size: 29px;
+  font-family: system-ui;
+  color: #333;
+  padding: 1rem;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+
+.subscribe .section-header h2,
+.subscribe p {
+color: #fff;
+}
+
+.subscribe input {
+background: #fff;
+color: #060c22;
+border: 0;
+outline: none;
+margin: 0;
+padding: 9px 20px;
+border-radius: 50px;
+font-size: 14px;
+}
+
+.subscribe button {
+border: 0;
+padding: 9px 25px;
+cursor: pointer;
+background: #f82249;
+color: #fff;
+transition: all 0.3s ease;
+outline: none;
+font-size: 14px;
+border-radius: 50px;
+}
+
+.subscribe button:hover {
+background: #e0072f;
+}
+
+@media only screen and (min-width: 768px) {
+.subscribe input {
+  min-width: 400px;
+}
+
+}
+
+
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+ 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-form {
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .hero-form {
+    margin-top: 2rem;
+  }
+}
+
+.hero-form-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+@media (min-width: 400px) {
+  .hero-form-input {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.hero-email-input {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.hero-form-submit {
+  background-color: #f50057;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 400px) {
+  .hero-form-submit {
+    margin-top: 0;
+  }
+}
+
+
+
+/* ==========================================================================
+	Subscribe  part  close
+========================================================================= */
+
+
+
+
+
+
+
+/* ==========================================================================
+	Footer   part  START
+========================================================================= */
+
+
+.footerpart{
+   background-color: #111010;  
+   padding-top: 80px;
+  
+   padding-bottom: 43px;
+}
+
+
+.footerpart p{
+   color: #9c9b9b;
+   line-height: 10px;
+   font-size:9px;
+   font-weight: bold;
+   text-align: center;
+   font-family: system-ui;
+   font-style: unset;
+   text-align: center;
+   line-height: 17px;
+    padding-bottom:;
+}
+
+
+
+
+
+  /* ==========================================================================
+	footer   part  close
+========================================================================= */
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+@media (max-width:991px){
+    
+  html{
+      font-size: 55%
+  }
+  header{
+      padding: 2rem;
+  }
+  section{
+      padding: 2rem;
+  }
+  .home{
+      background-position: center;
+  }
+  
+  }
+  
+  @media (max-width:768px){
+      html .fa-bars{
+          display: block;
+      }
+      header .navbar{
+          position: absolute;
+          top: 100%; left: 0; right: 0;
+          background: #eee;
+          border-top: .1rem solid rgba(0,0,0,.1);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+  
+      header #toggler:checked ~ .navbar{
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);;
+      }
+      header .navbar a{
+          margin: 1.5rem;
+          padding: 1.5rem;
+          background: #fff;
+          border: .1rem solid rgb(0, 0, 0, .1);
+          display: block;
+      }
+      .home.content h3{
+          font-size: 5rem;
+  
+      }
+      .home.content span{
+          font-size: 2.5rem;
+          
+      }
+      .icons-container .icons h3{
+          
+          font-size: 2rem;
+      }
+      
+      
+      .icons-container .icons span{
+          font-size: 1.7rem;
+      }
+  }
+  
+  
+  @media (max-width:450px){
+      
+      html{
+          font-size: 50%
+      }
+      .heading{
+          font-size: 3rem;
+      }
+      
+      }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ========================================================================== */
+
+
+
+
+/* ==========================================================================
+	$Teams
+========================================================================== */
+.person {
+  max-width: 270px; }
+  .person-content {
+    margin-top: 20px; }
+  .person h4 {
+    font-weight: 400; }
+  .person h5 {
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+
+.social-icons, .footer .footer-share {
+  margin-top: 30px; }
+  .social-icons li, .footer .footer-share li {
+    float: left; }
+  .social-icons a, .footer .footer-share a {
+    border: 1px solid #e8ecee;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #c6cacc;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px; }
+    .social-icons a:hover, .footer .footer-share a:hover {
+      background-color: #e84545;
+      border-color: #e84545;
+      color: #fff; }
+
+/* ==========================================================================
+	$Testimonials
+========================================================================== */
+.testimonials {
+  background-color: #53354a;
+  position: relative; }
+  .testimonials blockquote {
+    border: 0;
+    margin: 0;
+    padding: 100px 15% 0; }
+  .testimonials p {
+    color: #fff;
+    font: italic 36px "Cardo", Georgia, "Times New Roman", serif; }
+  .testimonials cite {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: uppercase; }
+
+/* ==========================================================================
+	$Download
+========================================================================== */
+.download h3 {
+  margin-top: 0; }
+.download p {
+  color: #2d3033;
+  font-weight: 600;
+  text-transform: uppercase; }
+.download .btn {
+  margin-top: 30px; }
+
+
+
+
+
+  /* <!-- test contact from  --> */
+
+  .form-wrap{
+    width: 320px;
+    background:#216CAE;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    
+  }
+
+
+
+    /* <!-- test contact from close  --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+	$Footer
+========================================================================== */
+.footer {
+  text-align: center; }
+  .footer-top {
+    background-color: #3a3e64;
+    padding-top: 50px; }
+  .footer-bottom {
+    background-color: #313454;
+    padding: 20px 0; }
+  .footer .footer-col {
+    margin-bottom: 80px; }
+  .footer h5 {
+    color: #fff; }
+  .footer h5 {
+    margin-bottom: 20px; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.5); }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: #e84545; }
+  .footer .footer-share {
+    margin-top: 0; }
+    .footer .footer-share li {
+      display: inline-block;
+      float: none; }
+    .footer .footer-share a {
+      border-width: 2px;
+      color: #fff; }
+  .footer .fa-heart {
+    color: #e84545;
+    font-size: 11px;
+    margin: 0 2px; }
+
+/* ==========================================================================
+	$Utilities
+========================================================================== */
+.work:nth-child(1) {
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+.work:nth-child(2) {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+.work:nth-child(3) {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+.work:nth-child(4) {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+.work:nth-child(5) {
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
+.work:nth-child(6) {
+  -moz-animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+.work:nth-child(7) {
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s; }
+.work:nth-child(8) {
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.animated {
+  visibility: visible; }
+
+/* ==========================================================================
+	Font Icon (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
+========================================================================== */
+@font-face {
+  font-family: "elegant-theme-line";
+  src: url('../fonts/elegant-theme-line.ttf?1439850014') format('truetype'), url('../fonts/elegant-theme-line.eot?1439850014') format('embedded-opentype'), url('../fonts/elegant-theme-line.svg?1439850014') format('svg'), url('../fonts/elegant-theme-line.woff?1439850014') format('woff'); }
+.icon {
+  font-family: 'elegant-theme-line';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mobile:before {
+  content: "\e000"; }
+
+.icon-laptop:before {
+  content: "\e001"; }
+
+.icon-desktop:before {
+  content: "\e002"; }
+
+.icon-tablet:before {
+  content: "\e003"; }
+
+.icon-phone:before {
+  content: "\e004"; }
+
+.icon-document:before {
+  content: "\e005"; }
+
+.icon-documents:before {
+  content: "\e006"; }
+
+.icon-search:before {
+  content: "\e007"; }
+
+.icon-clipboard:before {
+  content: "\e008"; }
+
+.icon-newspaper:before {
+  content: "\e009"; }
+
+.icon-notebook:before {
+  content: "\e00a"; }
+
+.icon-book-open:before {
+  content: "\e00b"; }
+
+.icon-browser:before {
+  content: "\e00c"; }
+
+.icon-calendar:before {
+  content: "\e00d"; }
+
+.icon-presentation:before {
+  content: "\e00e"; }
+
+.icon-picture:before {
+  content: "\e00f"; }
+
+.icon-pictures:before {
+  content: "\e010"; }
+
+.icon-video:before {
+  content: "\e011"; }
+
+.icon-camera:before {
+  content: "\e012"; }
+
+.icon-printer:before {
+  content: "\e013"; }
+
+.icon-toolbox:before {
+  content: "\e014"; }
+
+.icon-briefcase:before {
+  content: "\e015"; }
+
+.icon-wallet:before {
+  content: "\e016"; }
+
+.icon-gift:before {
+  content: "\e017"; }
+
+.icon-bargraph:before {
+  content: "\e018"; }
+
+.icon-grid:before {
+  content: "\e019"; }
+
+.icon-expand:before {
+  content: "\e01a"; }
+
+.icon-focus:before {
+  content: "\e01b"; }
+
+.icon-edit:before {
+  content: "\e01c"; }
+
+.icon-adjustments:before {
+  content: "\e01d"; }
+
+.icon-ribbon:before {
+  content: "\e01e"; }
+
+.icon-hourglass:before {
+  content: "\e01f"; }
+
+.icon-lock:before {
+  content: "\e020"; }
+
+.icon-megaphone:before {
+  content: "\e021"; }
+
+.icon-shield:before {
+  content: "\e022"; }
+
+.icon-trophy:before {
+  content: "\e023"; }
+
+.icon-flag:before {
+  content: "\e024"; }
+
+.icon-map:before {
+  content: "\e025"; }
+
+.icon-puzzle:before {
+  content: "\e026"; }
+
+.icon-basket:before {
+  content: "\e027"; }
+
+.icon-envelope:before {
+  content: "\e028"; }
+
+.icon-streetsign:before {
+  content: "\e029"; }
+
+.icon-telescope:before {
+  content: "\e02a"; }
+
+.icon-gears:before {
+  content: "\e02b"; }
+
+.icon-key:before {
+  content: "\e02c"; }
+
+.icon-paperclip:before {
+  content: "\e02d"; }
+
+.icon-attachment:before {
+  content: "\e02e"; }
+
+.icon-pricetags:before {
+  content: "\e02f"; }
+
+.icon-lightbulb:before {
+  content: "\e030"; }
+
+.icon-layers:before {
+  content: "\e031"; }
+
+.icon-pencil:before {
+  content: "\e032"; }
+
+.icon-tools:before {
+  content: "\e033"; }
+
+.icon-tools-2:before {
+  content: "\e034"; }
+
+.icon-scissors:before {
+  content: "\e035"; }
+
+.icon-paintbrush:before {
+  content: "\e036"; }
+
+.icon-magnifying-glass:before {
+  content: "\e037"; }
+
+.icon-circle-compass:before {
+  content: "\e038"; }
+
+.icon-linegraph:before {
+  content: "\e039"; }
+
+.icon-mic:before {
+  content: "\e03a"; }
+
+.icon-strategy:before {
+  content: "\e03b"; }
+
+.icon-beaker:before {
+  content: "\e03c"; }
+
+.icon-caution:before {
+  content: "\e03d"; }
+
+.icon-recycle:before {
+  content: "\e03e"; }
+
+.icon-anchor:before {
+  content: "\e03f"; }
+
+.icon-profile-male:before {
+  content: "\e040"; }
+
+.icon-profile-female:before {
+  content: "\e041"; }
+
+.icon-bike:before {
+  content: "\e042"; }
+
+.icon-wine:before {
+  content: "\e043"; }
+
+.icon-hotairballoon:before {
+  content: "\e044"; }
+
+.icon-globe:before {
+  content: "\e045"; }
+
+.icon-genius:before {
+  content: "\e046"; }
+
+.icon-map-pin:before {
+  content: "\e047"; }
+
+.icon-dial:before {
+  content: "\e048"; }
+
+.icon-chat:before {
+  content: "\e049"; }
+
+.icon-heart:before {
+  content: "\e04a"; }
+
+.icon-cloud:before {
+  content: "\e04b"; }
+
+.icon-upload:before {
+  content: "\e04c"; }
+
+.icon-download:before {
+  content: "\e04d"; }
+
+.icon-target:before {
+  content: "\e04e"; }
+
+.icon-hazardous:before {
+  content: "\e04f"; }
+
+.icon-piechart:before {
+  content: "\e050"; }
+
+.icon-speedometer:before {
+  content: "\e051"; }
+
+.icon-global:before {
+  content: "\e052"; }
+
+.icon-compass:before {
+  content: "\e053"; }
+
+.icon-lifesaver:before {
+  content: "\e054"; }
+
+.icon-clock:before {
+  content: "\e055"; }
+
+.icon-aperture:before {
+  content: "\e056"; }
+
+.icon-quote:before {
+  content: "\e057"; }
+
+.icon-scope:before {
+  content: "\e058"; }
+
+.icon-alarmclock:before {
+  content: "\e059"; }
+
+.icon-refresh:before {
+  content: "\e05a"; }
+
+.icon-happy:before {
+  content: "\e05b"; }
+
+.icon-sad:before {
+  content: "\e05c"; }
+
+.icon-facebook:before {
+  content: "\e05d"; }
+
+.icon-twitter:before {
+  content: "\e05e"; }
+
+.icon-googleplus:before {
+  content: "\e05f"; }
+
+.icon-rss:before {
+  content: "\e060"; }
+
+.icon-tumblr:before {
+  content: "\e061"; }
+
+.icon-linkedin:before {
+  content: "\e062"; }
+
+.icon-dribbble:before {
+  content: "\e063"; }
